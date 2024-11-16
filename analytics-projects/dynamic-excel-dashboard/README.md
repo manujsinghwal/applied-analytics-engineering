@@ -126,10 +126,7 @@ The dashboard provides clear insights into which carriers are consistently on ti
 ### Final View
 
 1. **Uber View:**
-![image](https://github.com/user-attachments/assets/553dfc04-1b50-4023-8630-8065801085f8)
+![image](https://github.com/user-attachments/assets/05b47d6a-9ec9-4440-b3f7-5cb0db87f6fe)
 
 2. **Detailed View:**
-![image](https://github.com/user-attachments/assets/196c512a-e443-4779-bf3a-dd23b2abdcfd)
-
-
-
+![image](https://github.com/user-attachments/assets/991a245e-2bff-46fa-8ff6-10154a33ef4b)
