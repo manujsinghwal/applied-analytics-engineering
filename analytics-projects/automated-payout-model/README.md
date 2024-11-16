@@ -100,11 +100,9 @@ Management would like to have an summary report for every iteration that should 
 
 ### Summary In Case Of Error:
 \
-![image](https://github.com/user-attachments/assets/562d503f-2327-41ee-91a9-406ff0c10329)
-
+![image](https://github.com/user-attachments/assets/cf505c2c-37df-42b2-8b52-10f3250f48fe)
 
 
 **Summary In Case Of No Error:**
 \
-![image](https://github.com/user-attachments/assets/570a5f5b-c4d9-4cda-9d74-8b8d88662cdf)
-
+![image](https://github.com/user-attachments/assets/3780290d-698f-4fea-b77b-98f1a0be4dbe)
