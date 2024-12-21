@@ -6,7 +6,7 @@ This project involves building a dynamic Excel dashboard to track the performanc
 The purpose is to help the Last Mile Team evaluate carrier efficiency, identify bottlenecks, and make data-driven decisions to improve operations.
 
 ### Data Source:
-Data is pulled from a MySQL database using ODBC connection into MS Excel.
+Data is pulled from a MySQL database using Power Query (ODBC connection) into MS Excel.
 The dataset includes the following fields:
 1. **ShipmentId:** An unique identification for each shipment.
 2. **Carrier:** Carrier name, through which "First Class Handicraft" shipping their products across different regions in India.
