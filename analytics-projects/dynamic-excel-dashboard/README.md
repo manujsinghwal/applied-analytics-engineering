@@ -1,3 +1,4 @@
+<span style="background-color: lightblue">Marked text</span>
 First Class Handicrafts - Logistics and Supply Chain Tracking Dashboard
 
 ### Project Overview
