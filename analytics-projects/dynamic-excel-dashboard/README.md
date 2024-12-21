@@ -7,6 +7,11 @@ The purpose is to help the Last Mile Team evaluate carrier efficiency, identify 
 
 ### Data Source:
 Data is pulled from a MySQL database using Power Query (ODBC connection) into MS Excel.
+\
+![image](https://github.com/user-attachments/assets/85466e47-cc4b-46fb-a99c-a31999be7f35)
+\
+![image](https://github.com/user-attachments/assets/2ac03f52-1c78-4273-bbbb-f1d87e4f3e94)
+\
 The dataset includes the following fields:
 1. **ShipmentId:** An unique identification for each shipment.
 2. **Carrier:** Carrier name, through which "First Class Handicraft" shipping their products across different regions in India.
