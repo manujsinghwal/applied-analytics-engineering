@@ -55,7 +55,7 @@ The Ops and Last Mile Team at **First Class Handicraft** needs a way to:
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/9a72ec8f-533a-48a4-a228-4a603992f893" />
 
 ### Workflow
-1. **Data Import:**
+* **Data Import:**
 The following SQL query is used to fetch the required last mile shipment data for the dashboard. The query pulls data from the MySQL database for shipments imported three days prior to the current date.
 
 ```sql
@@ -129,13 +129,13 @@ select
 from final;
 ```
 
-2. **Performance Insights:**
+* **Performance Insights:**
 The dashboard delivers clear insights into operational activities and carrier performance, identifying which carriers consistently meet delivery timelines and which contribute to delays. This empowers the team to make data-driven, real-time decisions and implement corrective actions promptly.
 
 ### Final View
 
-1. **Uber View:**
+* **Uber View:**
 ![image](https://github.com/user-attachments/assets/05b47d6a-9ec9-4440-b3f7-5cb0db87f6fe)
 
-2. **Detailed View:**
+* **Detailed View:**
 ![image](https://github.com/user-attachments/assets/991a245e-2bff-46fa-8ff6-10154a33ef4b)
