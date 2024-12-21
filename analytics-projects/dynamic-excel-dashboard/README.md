@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/2fd0798b-88a2-40c9-b334-4cf2e0494527)# First Class Handicrafts - Logistics and Supply Chain Tracking Dashboard
+First Class Handicrafts - Logistics and Supply Chain Tracking Dashboard
 
 ### Project Overview
 This project involves building a dynamic Excel dashboard to track the operational efficiency and the performance of various carriers used by First Class Handicrafts, a small handicraft company based in Delhi, India. The dashboard provides real-time insights into shipment deliveries, delays, and performance comparisons across multiple carriers.
