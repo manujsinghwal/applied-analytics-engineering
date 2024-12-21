@@ -1,5 +1,4 @@
-<span style="background-color: lightblue">Marked text</span>
-First Class Handicrafts - Logistics and Supply Chain Tracking Dashboard
+# First Class Handicrafts - Logistics and Supply Chain Tracking Dashboard
 
 ### Project Overview
 This project involves building a dynamic Excel dashboard to track the operational efficiency and the performance of various carriers used by First Class Handicrafts, a small handicraft company based in Delhi, India. The dashboard provides real-time insights into shipment deliveries, delays, and performance comparisons across multiple carriers.
@@ -41,7 +40,7 @@ The dataset includes the following fields:
 25. **DeliveryDelayHour:** In case of late delivery, then how many hour we missed of.
 
 ### Problem Statement
-The Ops and Last Mile Team at First Class Handicraft needs a way to:
+The Ops and Last Mile Team at **First Class Handicraft** needs a way to:
 1. Monitor every operational activity to understand the average time taken to fulfill orders.
 2. Measure compliance with FulfillmentSLA (12 hours) and CarrierPickUpSLA (18 hours). Highlight any deviations from these SLAs to improve process efficiency.
 3. Track carrier performance to understand how well different carriers are delivering shipments.
@@ -50,20 +49,10 @@ The Ops and Last Mile Team at First Class Handicraft needs a way to:
 6. Filter data interactively to analyze the best and worst performing carriers.
 
 ### Dashboard Features
-* **Real-Time Data Updates:**
+* **Real-Time Data Pull:**
 1. Data shown in the dashboard is based on shipments imported three days before the current date to align with carrier service levels (Next Day, Two Day, and Standard (Three Day) Delivery).
-2. A refresh button (available in Excel) allows the team to update the data dynamically without needing to re-enter manually.
+2. A refresh button (available in Excel) allows the team to pull the data dynamically without needing to re-enter manually.
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/9a72ec8f-533a-48a4-a228-4a603992f893" />
-
-
-* **Carrier Performance Evaluation:**
-1. Analyze key metrics:
-  \
-  i. Total orders delivered vs. total delayed orders.
-  \
-  ii. Average delay hours for each carrier.
-  \
-  iii. Best and worst performing carriers in terms of timely deliveries.
 
 ### Workflow
 1. **Data Import:**
@@ -122,7 +111,7 @@ select
         when ShipmentDeliveredTimestamp > ShipmentExpectedDeliveryTimestamp then 'Delayed'
         when ShipmentDeliveredTimestamp <= ShipmentExpectedDeliveryTimestamp then 'OnTime'
     end as DeliverySubStatus,
-	round(timestampdiff(minute, ShipmentImportedTimestamp, ShipmentFulfilledTimestamp) / 60.0, 2) as ImportToFulfilledHours,
+    round(timestampdiff(minute, ShipmentImportedTimestamp, ShipmentFulfilledTimestamp) / 60.0, 2) as ImportToFulfilledHours,
     round(timestampdiff(minute, ShipmentImportedTimestamp, ShipmentCarrierPickUpTimestamp) / 60.0, 2) as ImportToPickUpHours,
     round(timestampdiff(minute, ShipmentImportedTimestamp, ShipmentDeliveredTimestamp) / 60.0, 2) as ImportToDeliverHours,
     round(timestampdiff(minute, ShipmentFulfilledTimestamp, ShipmentCarrierPickUpTimeStamp) / 60.0, 2) as FulfilledToPickUpHours,
@@ -140,11 +129,8 @@ select
 from final;
 ```
 
-2. **Data Refresh:**
-Users can refresh the entire report with a single click using Excel’s Refresh All button to pull updated data from the MySQL database.
-
-3. **Performance Insights:**
-The dashboard provides clear insights into which carriers are consistently on time and which are contributing to delivery delays. This enables the team to take corrective actions based on real-time data.
+2. **Performance Insights:**
+The dashboard delivers clear insights into operational activities and carrier performance, identifying which carriers consistently meet delivery timelines and which contribute to delays. This empowers the team to make data-driven, real-time decisions and implement corrective actions promptly.
 
 ### Final View
 
