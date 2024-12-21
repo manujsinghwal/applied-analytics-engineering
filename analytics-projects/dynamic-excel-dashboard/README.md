@@ -113,11 +113,11 @@ final as (
 select
     *,
     case
-		when ShipmentDeliveredTimestamp is null then 'InTransit'
-		else 'Delivered'
+	when ShipmentDeliveredTimestamp is null then 'InTransit'
+	else 'Delivered'
     end as DeliveryStatus,
     case
-		when ShipmentDeliveredTimestamp is null then 'InTransit'
+	when ShipmentDeliveredTimestamp is null then 'InTransit'
         when ShipmentDeliveredTimestamp > ShipmentExpectedDeliveryTimestamp then 'Delayed'
         when ShipmentDeliveredTimestamp <= ShipmentExpectedDeliveryTimestamp then 'OnTime'
     end as DeliverySubStatus,
@@ -134,7 +134,7 @@ select
 	*,
 	case
 	    when DeliverySubStatus = 'Delayed' then round(timestampdiff(minute, ShipmentExpectedDeliveryTimestamp, ShipmentDeliveredTimestamp) / 60.0, 2)
-		else 0
+	    else 0
 	end as DeliveryDelayHour
 from final;
 ```
