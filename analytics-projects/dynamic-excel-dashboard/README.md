@@ -135,7 +135,4 @@ The dashboard delivers clear insights into operational activities and carrier pe
 ### Final View
 
 ![image](https://github.com/user-attachments/assets/7494ca28-65e8-4c41-9c3a-2ed61f8602ee)
-
 ![image](https://github.com/user-attachments/assets/26ea0c98-3e05-4444-a6ae-7ebf0d116b1c)
-
-
